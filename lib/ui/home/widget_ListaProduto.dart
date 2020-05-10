@@ -30,7 +30,7 @@ class WidgetListPromocao extends StatelessWidget{
               print("hummmmm ????????");
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => DetalhesPromo()),
+                MaterialPageRoute(builder: (context) => DetalhesPromo(promocao)),
               );
             },
           ),

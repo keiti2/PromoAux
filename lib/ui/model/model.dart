@@ -32,7 +32,7 @@ List<Promocao> lstPromocoes=[
     estabelecimento: Estabelecimento(
       nome: 'Café do outro lado',
       descricao: 'Ponto convidativo de cafés especias e lanches de bufalo........'  ,
-      imagem: 'assets/img/est/cafedolado.png'
+      imagem: 'assets/est/cafedolado.png'
     )
   ),
   const Promocao(
@@ -45,7 +45,7 @@ List<Promocao> lstPromocoes=[
     estabelecimento: Estabelecimento(
       nome: 'Chapolin',
       descricao: 'Restaurante espaçoso e festivo serve grande opção de pratos em buffet ou...'  ,
-      imagem: 'assets/img/est/chaplin.png'
+      imagem: 'assets/est/cafedolado.png'
     )
   ),
   const Promocao(
@@ -58,7 +58,7 @@ List<Promocao> lstPromocoes=[
     estabelecimento: Estabelecimento(
       nome: 'Kozan',
       descricao: 'Amplo menu japonês com destaque ao rodizio, opções a lá carte e ambiente bom...',
-      imagem: 'assets/img/est/kozan.png'
+      imagem: 'assets/est/cafedolado.png'
     )
   ),
   const Promocao(
@@ -71,7 +71,7 @@ List<Promocao> lstPromocoes=[
     estabelecimento: Estabelecimento(
       nome: 'Chapolin',
       descricao: 'Restaurante espaçoso e festivo serve grande opção de pratos em buffet ou...'  ,
-      imagem: 'assets/img/est/chaplin.png'
+      imagem: 'assets/est/cafedolado.png'
     )
   ),
   const Promocao(
@@ -84,7 +84,7 @@ List<Promocao> lstPromocoes=[
     estabelecimento: Estabelecimento(
       nome: 'Chapolin',
       descricao: 'Restaurante espaçoso e festivo serve grande opção de pratos em buffet ou...'  ,
-      imagem: 'assets/img/est/chaplin.png'
+      imagem: 'assets/est/cafedolado.png'
     )
   ),
 ];
