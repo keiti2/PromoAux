@@ -13,7 +13,7 @@ class PerfilPageBody extends StatelessWidget {
           children: <Widget>[
             
             Text(
-              "SaPorraTaErradoAchoKKKK ",
+              "Perfil ",
               style: TextStyle(color: Colors.red),
             ),
             

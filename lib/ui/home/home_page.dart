@@ -11,8 +11,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: _title,
       debugShowCheckedModeBanner: false,
+      title: _title,
       theme: new ThemeData(
         primarySwatch: Colors.grey,
         brightness: Brightness.dark,

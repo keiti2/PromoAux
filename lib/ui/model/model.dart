@@ -5,19 +5,22 @@ class Promocao{
   final double precoVenda;
   final double precoPromocao;
   final String image;
+  final String imageBackground;
   final Estabelecimento estabelecimento;
 
-  const Promocao({this.id,this.nome,this.descricao,this.precoVenda,this.precoPromocao,this.image,this.estabelecimento});
+  const Promocao({this.id,this.nome,this.descricao,this.precoVenda,this.precoPromocao,this.image,this.estabelecimento,this.imageBackground});
 }
 
 class Estabelecimento{
   final String nome;
   final String descricao;
   final String imagem;
+  final String imageBackground;
   const Estabelecimento({
     this.nome,
     this.descricao,
-    this.imagem
+    this.imagem,
+    this.imageBackground
   });
 }
 
@@ -28,11 +31,13 @@ List<Promocao> lstPromocoes=[
     descricao: 'Pão artesanal (sem ovo e sem leite) mega burger de costela e molho barbecy',
     precoVenda: 25.00,
     precoPromocao: 13.00,
-    image: 'assets/img/bufalo.png',
+    image: 'assets/img/bufalo_large.jpg',
+    imageBackground: '',
     estabelecimento: Estabelecimento(
       nome: 'Café do outro lado',
       descricao: 'Ponto convidativo de cafés especias e lanches de bufalo........'  ,
-      imagem: 'assets/est/cafedolado.png'
+      imagem: 'assets/est/cafedolado.png',
+      imageBackground: ''
     )
   ),
   const Promocao(
@@ -41,11 +46,13 @@ List<Promocao> lstPromocoes=[
     descricao: 'Mussarela de búfala, tomate, manjericão e azeitonas verdes.',
     precoVenda: 40.00,
     precoPromocao: 20.00,
-    image: 'assets/img/marguerita.png',
+    image: 'assets/img/pizza.jpg',
+    imageBackground: '',
     estabelecimento: Estabelecimento(
       nome: 'Chapolin',
       descricao: 'Restaurante espaçoso e festivo serve grande opção de pratos em buffet ou...'  ,
-      imagem: 'assets/est/cafedolado.png'
+      imagem: 'assets/est/chaplin.png',
+      imageBackground: ''
     )
   ),
   const Promocao(
@@ -55,10 +62,12 @@ List<Promocao> lstPromocoes=[
     precoVenda: 25.00,
     precoPromocao: 12.00,
     image: 'assets/img/hotfiladelfia.png',
+    imageBackground: '',
     estabelecimento: Estabelecimento(
       nome: 'Kozan',
       descricao: 'Amplo menu japonês com destaque ao rodizio, opções a lá carte e ambiente bom...',
-      imagem: 'assets/est/cafedolado.png'
+      imagem: 'assets/est/cafedolado.png',
+      imageBackground: ''
     )
   ),
   const Promocao(
@@ -68,10 +77,12 @@ List<Promocao> lstPromocoes=[
     precoVenda: 25.00,
     precoPromocao: 13.00,
     image: 'assets/img/tabule.png',
+    imageBackground: '',
     estabelecimento: Estabelecimento(
       nome: 'Chapolin',
       descricao: 'Restaurante espaçoso e festivo serve grande opção de pratos em buffet ou...'  ,
-      imagem: 'assets/est/cafedolado.png'
+      imagem: 'assets/est/chaplin.png',
+      imageBackground: ''
     )
   ),
   const Promocao(
@@ -81,10 +92,58 @@ List<Promocao> lstPromocoes=[
     precoVenda: 50.00,
     precoPromocao: 20.00,
     image: 'assets/img/xgorduroso.png',
+    imageBackground: '',
     estabelecimento: Estabelecimento(
       nome: 'Chapolin',
       descricao: 'Restaurante espaçoso e festivo serve grande opção de pratos em buffet ou...'  ,
-      imagem: 'assets/est/cafedolado.png'
+      imagem: 'assets/est/chaplin.png',
+      imageBackground: ''
+    )
+  ),
+
+  const Promocao(
+    id: 6,
+    nome: 'X-Podrão',
+    descricao: 'Pão artesanal (sem ovo e sem leite) mega burger de costela e molho barbecy',
+    precoVenda: 25.00,
+    precoPromocao: 13.00,
+    image: 'assets/img/bufalo.png',
+    imageBackground: '',
+    estabelecimento: Estabelecimento(
+      nome: 'Café do outro lado',
+      descricao: 'Ponto convidativo de cafés especias e lanches de bufalo........'  ,
+      imagem: 'assets/est/cafedolado.png',
+      imageBackground: ''
+    )
+  ),
+  const Promocao(
+    id: 7,
+    nome: 'Salada',
+    descricao: 'Pão artesanal (sem ovo e sem leite) mega burger de costela e molho barbecy',
+    precoVenda: 25.00,
+    precoPromocao: 13.00,
+    image: 'assets/img/bufalo.png',
+    imageBackground: '',
+    estabelecimento: Estabelecimento(
+      nome: 'Café do outro lado',
+      descricao: 'Ponto convidativo de cafés especias e lanches de bufalo........'  ,
+      imagem: 'assets/est/cafedolado.png',
+      imageBackground: ''
+    )
+  ),
+  const Promocao(
+    id: 8,
+    nome: 'MP3',
+    descricao: 'Áudio Portátil MP3....................................................',
+    precoVenda: 25.00,
+    precoPromocao: 13.00,
+    image: 'assets/img/mp3.jpg',
+    imageBackground: '',
+    estabelecimento: Estabelecimento(
+      nome: 'Café do outro lado',
+      descricao: 'Ponto convidativo de cafés especias e lanches de bufalo........'  ,
+      imagem: 'assets/est/freak.png',
+      imageBackground: ''
     )
   ),
 ];
