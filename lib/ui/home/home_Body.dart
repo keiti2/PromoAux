@@ -6,14 +6,15 @@ import '../model/model.dart';
 class HomePageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Expanded(
+    return new Container(
       child: new Container(
+        color: Colors.black,
         child: new CustomScrollView(
           scrollDirection: Axis.vertical,
           shrinkWrap: false,
           slivers: <Widget>[
             new SliverPadding(
-              padding: const EdgeInsets.symmetric(vertical: 0.00),
+              padding: const EdgeInsets.symmetric(vertical: 10.00),
               sliver: new SliverList(
                 delegate: new SliverChildBuilderDelegate(
                     (context, index) => new WidgetListPromocao(lstPromocoes[index]),
