@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import '../localizacao/localizacao_page.dart';
+import '../favoritos/favoritos_page.dart';
+import '../lista/lista_page.dart';
+import '../perfil/perfil_page.dart';
 import './home_Body.dart';
 
 class HomePage extends StatelessWidget {
@@ -33,9 +36,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   List<Widget> _widgetOptions = [
     HomePageBody(),
     LocalizacaoPageBody(),
-    LocalizacaoPageBody(),
-    LocalizacaoPageBody(),
-    LocalizacaoPageBody(),
+    FavoritosPageBody(),
+    ListaPageBody(),
+    PerfilPageBody(),
   ];
 
   void _onItemTapped(int index) {
