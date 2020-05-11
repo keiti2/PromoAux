@@ -10,6 +10,7 @@ class WidgetListPromocao extends StatelessWidget{
  @override
   Widget build(BuildContext context) {
     return new Container(
+      //padding: EdgeInsets.all(20.0),
       child: new Stack(
         children: <Widget>[
           new Container(
