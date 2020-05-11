@@ -34,18 +34,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   List<Widget> _widgetOptions = [
     HomePageBody(),
     LocalizacaoPageBody(),
-    Text(
-      'Index 3: lista promoções expiradas,ativas a expirar',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 4: lista promções ou estabelecimento favoritos',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 5: Perfil do usuário',
-      style: optionStyle,
-    ),
+    LocalizacaoPageBody(),
+    LocalizacaoPageBody(),
+    LocalizacaoPageBody(),
   ];
 
   void _onItemTapped(int index) {
