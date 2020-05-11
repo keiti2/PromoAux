@@ -6,7 +6,9 @@ import '../model/model.dart';
 class HomePageBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Container(
+    return new Scaffold(
+      appBar: AppBar(title: const Text('Home - Promocoes')),
+     body:Container(
       child: new Container(
         color: Colors.black,
         child: new CustomScrollView(
@@ -25,6 +27,6 @@ class HomePageBody extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ));
   }
 }

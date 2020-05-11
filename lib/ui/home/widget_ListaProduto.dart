@@ -28,8 +28,6 @@ class WidgetListPromocao extends StatelessWidget {
                   subtitle: Text("De " + promocao.precoVenda.toString() + " Por  " + promocao.precoPromocao.toString(),style: TextStyle(color: Colors.white,fontSize: 15)),
               ),
 
-
-
                trailing:Icon(Icons.keyboard_arrow_right, color: Colors.white, size: 30.0),
 
               //teste merda
