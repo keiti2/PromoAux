@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../model/model.dart';
 import './values/values.dart';
-import './alert_dialogs/login_cadastro.dart';
+import '../alert_dialogs/login_cadastro.dart';
 /* 
 class DetalhesPromo extends StatelessWidget {
   final Promocao promocao;
@@ -215,7 +215,7 @@ class DetalhesPromo extends StatelessWidget {
                   padding: EdgeInsets.all(15),
                   child: RaisedButton(
                     onPressed: () {
-                      showAlertDialog(context);
+                      showMyDialog(context);
                     },
                     textColor: Colors.white,
                     padding: const EdgeInsets.all(0.0),
