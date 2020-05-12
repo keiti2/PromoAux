@@ -16,11 +16,15 @@ class Estabelecimento{
   final String descricao;
   final String imagem;
   final String imageBackground;
+  final String endereco;
+  final String cidade;
   const Estabelecimento({
     this.nome,
     this.descricao,
     this.imagem,
-    this.imageBackground
+    this.imageBackground,
+    this.endereco,
+    this.cidade
   });
 }
 
@@ -37,7 +41,9 @@ List<Promocao> lstPromocoes=[
       nome: 'Café do outro lado',
       descricao: 'Ponto convidativo de cafés especias e lanches de bufalo........'  ,
       imagem: 'assets/est/cafedolado.png',
-      imageBackground: ''
+      imageBackground: '',
+      endereco: "Av. das Esmeraldas, 11 - Jardim Tangara",
+      cidade: "Marília"
     )
   ),
   const Promocao(
@@ -52,7 +58,9 @@ List<Promocao> lstPromocoes=[
       nome: 'Chapolin',
       descricao: 'Restaurante espaçoso e festivo serve grande opção de pratos em buffet ou...'  ,
       imagem: 'assets/est/chaplin.png',
-      imageBackground: ''
+      imageBackground: '',
+      endereco: "Av. das Esmeraldas, 11 - Jardim Tangara",
+      cidade: "Marília"
     )
   ),
   const Promocao(
@@ -67,7 +75,9 @@ List<Promocao> lstPromocoes=[
       nome: 'Kozan',
       descricao: 'Amplo menu japonês com destaque ao rodizio, opções a lá carte e ambiente bom...',
       imagem: 'assets/est/cafedolado.png',
-      imageBackground: ''
+      imageBackground: '',
+      endereco: "Av. das Esmeraldas, 11 - Jardim Tangara",
+      cidade: "Marília"
     )
   ),
   const Promocao(
@@ -82,7 +92,9 @@ List<Promocao> lstPromocoes=[
       nome: 'Chapolin',
       descricao: 'Restaurante espaçoso e festivo serve grande opção de pratos em buffet ou...'  ,
       imagem: 'assets/est/chaplin.png',
-      imageBackground: ''
+      imageBackground: '',
+      endereco: "Av. das Esmeraldas, 11 - Jardim Tangara",
+      cidade: "Marília"
     )
   ),
   const Promocao(
@@ -97,7 +109,9 @@ List<Promocao> lstPromocoes=[
       nome: 'Chapolin',
       descricao: 'Restaurante espaçoso e festivo serve grande opção de pratos em buffet ou...'  ,
       imagem: 'assets/est/chaplin.png',
-      imageBackground: ''
+      imageBackground: '',
+      endereco: "Av. das Esmeraldas, 11 - Jardim Tangara",
+      cidade: "Marília"
     )
   ),
 
@@ -113,7 +127,9 @@ List<Promocao> lstPromocoes=[
       nome: 'Café do outro lado',
       descricao: 'Ponto convidativo de cafés especias e lanches de bufalo........'  ,
       imagem: 'assets/est/cafedolado.png',
-      imageBackground: ''
+      imageBackground: '',
+      endereco: "Av. das Esmeraldas, 11 - Jardim Tangara",
+      cidade: "Marília"
     )
   ),
   const Promocao(
@@ -128,7 +144,9 @@ List<Promocao> lstPromocoes=[
       nome: 'Café do outro lado',
       descricao: 'Ponto convidativo de cafés especias e lanches de bufalo........'  ,
       imagem: 'assets/est/cafedolado.png',
-      imageBackground: ''
+      imageBackground: '',
+      endereco: "Av. das Esmeraldas, 11 - Jardim Tangara",
+      cidade: "Marília"
     )
   ),
   const Promocao(
@@ -143,7 +161,9 @@ List<Promocao> lstPromocoes=[
       nome: 'Café do outro lado',
       descricao: 'Ponto convidativo de cafés especias e lanches de bufalo........'  ,
       imagem: 'assets/est/freak.png',
-      imageBackground: ''
+      imageBackground: '',
+      endereco: "Av. das Esmeraldas, 11 - Jardim Tangara",
+      cidade: "Marília"
     )
   ),
 ];
