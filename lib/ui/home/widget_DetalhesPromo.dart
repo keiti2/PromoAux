@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../model/model.dart';
 import './values/values.dart';
 import '../alert_dialogs/login_cadastro.dart';
+import './widget_DetalhesEstabelecimento.dart';
+
 /* 
 class DetalhesPromo extends StatelessWidget {
   final Promocao promocao;
