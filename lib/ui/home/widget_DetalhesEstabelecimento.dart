@@ -12,7 +12,6 @@ class DetalhesEstabelecimento extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text('Estabelecimento'),
-          backgroundColor: Colors.black,
         ),
         body: Container(
           color: Colors.black87,

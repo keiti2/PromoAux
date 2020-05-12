@@ -53,7 +53,6 @@ class DetalhesPromo extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
-          backgroundColor: Colors.black45,
           title: Text('Detalhes Promoção'),
         ),
         body: Container(
