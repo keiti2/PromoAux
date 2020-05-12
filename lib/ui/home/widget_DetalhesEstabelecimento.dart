@@ -15,7 +15,8 @@ class DetalhesEstabelecimento extends StatelessWidget {
         ),
         body: Container(
           color: Colors.black87,
-          child: Column(
+          child: SingleChildScrollView(
+            child:Column(
             children: <Widget>[
               Container(
                 height: 200,
@@ -186,7 +187,7 @@ class DetalhesEstabelecimento extends StatelessWidget {
                     )),
               ),
             ],
-          ),
+          )),
         ));
   }
 
