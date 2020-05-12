@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import '../model/model.dart';
 import './values/values.dart';
 import './alert_dialogs/login_cadastro.dart';
+import './widget_DetalhesEstabelecimento.dart';
+
 /* 
 class DetalhesPromo extends StatelessWidget {
   final Promocao promocao;
@@ -152,64 +154,73 @@ class DetalhesPromo extends StatelessWidget {
                     ],
                   ),
                 ),
-                Container(
-                  padding: EdgeInsets.only(right: 15),
-                  child: Row(
-                    children: <Widget>[
-                      Expanded(
-                        flex: 3,
-                        child: Image.asset(
-                          promocao.estabelecimento.imagem,
-                          fit: BoxFit.contain,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DetalhesEstabelecimento(promocao.estabelecimento)),
+                    );
+                  },
+                  child: Container(
+                    padding: EdgeInsets.only(right: 15),
+                    child: Row(
+                      children: <Widget>[
+                        Expanded(
+                          flex: 3,
+                          child: Image.asset(
+                            promocao.estabelecimento.imagem,
+                            fit: BoxFit.contain,
+                          ),
                         ),
-                      ),
-                      Expanded(
-                        flex: 7,
-                        child: Column(
-                          children: <Widget>[
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: <Widget>[
-                                Text(promocao.estabelecimento.nome,
+                        Expanded(
+                          flex: 7,
+                          child: Column(
+                            children: <Widget>[
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: <Widget>[
+                                  Text(promocao.estabelecimento.nome,
+                                      style: TextStyle(
+                                        color: AppColors.primaryText,
+                                        fontFamily: "Roboto",
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18,
+                                        height: 1.2,
+                                      )),
+                                  Text('2,5 Km',
+                                      style: TextStyle(
+                                        color: AppColors.primaryText,
+                                        fontFamily: "Roboto",
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 18,
+                                        height: 1.2,
+                                      ))
+                                ],
+                              ),
+                              Row(
+                                children: <Widget>[
+                                  Flexible(
+                                      child: Text(
+                                    promocao.estabelecimento.descricao,
                                     style: TextStyle(
                                       color: AppColors.primaryText,
                                       fontFamily: "Roboto",
                                       fontWeight: FontWeight.w400,
-                                      fontSize: 18,
-                                      height: 1.2,
-                                    )),
-                                Text('2,5 Km',
-                                    style: TextStyle(
-                                      color: AppColors.primaryText,
-                                      fontFamily: "Roboto",
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 18,
-                                      height: 1.2,
-                                    ))
-                              ],
-                            ),
-                            Row(
-                              children: <Widget>[
-                                Flexible(
-                                    child: Text(
-                                  promocao.estabelecimento.descricao,
-                                  style: TextStyle(
-                                    color: AppColors.primaryText,
-                                    fontFamily: "Roboto",
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 16,
-                                    height: 1.33333,
-                                  ),
-                                )),
-                              ],
-                            ),
-                          ],
+                                      fontSize: 16,
+                                      height: 1.33333,
+                                    ),
+                                  )),
+                                ],
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
-
                 Container(
                   width: 2000,
                   padding: EdgeInsets.all(15),
@@ -229,16 +240,12 @@ class DetalhesPromo extends StatelessWidget {
                       padding: const EdgeInsets.all(10.0),
                       child: const Text('Pegue seu Cupom',
                           style: TextStyle(fontSize: 20)),
-                        
                     ),
                   ),
                 )
-                
               ],
             ),
           ),
         ));
   }
 }
-
-

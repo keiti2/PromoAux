@@ -13,7 +13,9 @@ showAlertDialog(BuildContext context) {
   );
   Widget voltarButton = FlatButton(
     child: Text("Voltar"),
-    onPressed:  () {},
+    onPressed:  () {
+              Navigator.of(context).pop();
+            },
   );
   // configura o  AlertDialog
   AlertDialog alert = AlertDialog(
