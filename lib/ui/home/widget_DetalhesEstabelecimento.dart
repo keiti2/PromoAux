@@ -209,11 +209,8 @@ class DetalhesEstabelecimento extends StatelessWidget {
   }
 
   _launchMAP() async {
-    final String lat = "-22.221077";
-    final String lng = "-49.939343";
-
-    final String googleMapsUrl = "comgooglemaps://?center=$lat,$lng";
-    final String appleMapsUrl = "https://maps.apple.com/?q=$lat,$lng";
+    final String googleMapsUrl = "comgooglemaps://?center=cafedolado,marilia,sp";
+    final String appleMapsUrl = "https://maps.apple.com/?q=cafedolado,marilia,sp";
 
     if (await canLaunch(googleMapsUrl)) {
       await launch(googleMapsUrl);
