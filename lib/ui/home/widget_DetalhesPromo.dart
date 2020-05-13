@@ -68,7 +68,10 @@ class DetalhesPromo extends StatelessWidget {
                       Container(
                         child: Image.asset(
                           promocao.image,
-                          fit: BoxFit.cover,
+                          height: 400,
+                          width: 500,
+                          fit: BoxFit.fitHeight,
+                          
                         ),
                       ),
                       Positioned(

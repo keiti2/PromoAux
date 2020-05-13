@@ -10,25 +10,40 @@ class WidgetListPromocao extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
-      padding: EdgeInsets.all(5.0),
+      padding: EdgeInsets.all(3.0),
       child: new Stack(
         children: <Widget>[
           new Container(
-            height: 100.0,
+            height: 95.0,
             decoration: new BoxDecoration(color: Colors.black),
             child: new ListTile(
-              leading: CircleAvatar(
-                radius: 35.0,
-                backgroundImage: AssetImage(promocao.image),
+              leading: Image.asset(
+                promocao.image,
+                height: 140,
+                width: 90,
+                colorBlendMode: BlendMode.darken,
+                fit: BoxFit.fitWidth,
               ),
-              title: Text(promocao.nome, style: TextStyle(color: Colors.white),textAlign: TextAlign.center),
-            
+              title: Text(promocao.nome,
+                  style: TextStyle(color: Colors.white),
+                  textAlign: TextAlign.center),
               subtitle: new ListTile(
-                  title: Text(promocao.descricao, style: TextStyle(color: Colors.white,fontSize: 14)),
-                  subtitle: Text("De " + promocao.precoVenda.toString() + " Por  " + promocao.precoPromocao.toString(),style: TextStyle(color: Colors.white,fontSize: 15)),
-              ),
+                  title: Text(promocao.descricao,
+                      style: TextStyle(color: Colors.white, fontSize: 13)),
+                  subtitle: Row(
+                    children: <Widget>[
+                      Text("De R\$:" + promocao.precoVenda.toString(),
+                          style: TextStyle(color: Colors.redAccent, fontSize: 15,decoration: TextDecoration.lineThrough)),
+                      Text(" Por R\$:" + promocao.precoPromocao.toString(),
+                          style: TextStyle(color: Colors.white, fontSize: 15)),
+                    ],
+                  )
 
-               trailing:Icon(Icons.keyboard_arrow_right, color: Colors.white, size: 30.0),
+                  /* Text("De " + promocao.precoVenda.toString() + " Por  " + promocao.precoPromocao.toString(),style: TextStyle(color: Colors.white,fontSize: 15)), */
+                  ),
+
+              trailing: Icon(Icons.keyboard_arrow_right,
+                  color: Colors.white, size: 30.0),
 
               //teste merda
               onTap: () {
