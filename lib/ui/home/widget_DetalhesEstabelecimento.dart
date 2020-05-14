@@ -193,7 +193,7 @@ class DetalhesEstabelecimento extends StatelessWidget {
   }
 
   _launchURL() async {
-    const url = 'https://flutter.dev';
+    const url = 'https://www.facebook.com/cafedolado/';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
