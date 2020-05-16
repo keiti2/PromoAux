@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
+import '../cadastro/cadastro2.dart';
 
 enum Genero { MASCULINO, FEMININO }
 
@@ -166,7 +167,13 @@ class _Cadastro1 extends State<Cadastro1> {
           width: 320.0,
           height: 60.0,
           child: FlatButton(
-            onPressed: _sendForm,
+            onPressed: (){
+              _sendForm();
+              Navigator.push(
+                  context,
+                  MaterialPageRoute( builder: (context) => Cadastro2()),
+                );
+            },
             textColor: Colors.white,
             color: Colors.green,
             highlightColor: Colors.orangeAccent,
